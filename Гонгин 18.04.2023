@@ -1,0 +1,4 @@
+# 1
+x = int(input('Введите x: '))
+a = int(input('Введите a: '))
+b = int(input('Введите b: '))
