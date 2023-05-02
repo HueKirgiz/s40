@@ -1,0 +1,93 @@
+from math import *
+# 1
+print('Задание 1')
+N = 0
+K = 0
+a = int(input('Введите число: '))
+while a != 0:
+    N += 1
+    K += a
+    a = int(input('Введите число: '))
+N = N + 1
+print(f'Сумма чисел равна {K}')
+print(f'Кол-во чисел равно {N}')
+# 2
+print()
+print('Задание 2')
+N = 5
+S = 0
+while N != 0:
+    a = int(input('Введите число: '))
+    if a > 20: S = S + a
+    N -= 1
+print(f'Сумма чисел больших 20 равна: {S}')
+# 3
+print()
+print('Задание 3')
+N = 5
+a1 = int(input('Введите число: '))
+max = a1
+min = a1
+while N != 1:
+    a2 = int(input('Введите число: '))
+    if a2 > max: max = a2
+    if a2 < min: min = a2
+    N -= 1
+print(f'Максимальное число: {max}')
+print(f'Минимальное число: {min}')
+# 4
+print()
+print('Задание 4')
+N = 5
+S = 0
+K = 0
+while N != 0:
+    a = int(input('Введите число: '))
+    if a % 2 == 0:
+        S += a
+        K += 1
+    N -= 1
+print(f'Среднее арифметическое четных чисел равно:', S/K)
+# 5
+print()
+print('Задание 5')
+N = 5
+S = 0
+sp = []
+while N != 0:
+    a = int(input('Введи число: '))
+    if a > 100:
+        S += 1
+        sp.append(a)
+    N -= 1
+print('Числа > 100:', *sp)
+print(f'Кол-во чисел > 100: {S}')
+# 6
+print()
+print('Задание 6')
+N = 12
+S = 0
+M = 1
+while N != 0:
+    a = int(input(f'Введи з/п за {M}-й месяц : '))
+    N -= 1
+    S += a
+    M += 1
+M = 12
+print(f'Средняя з/п за год равна: {S/M}р.')
+# 7
+print()
+print('Задание 7')
+a = int(input('Введи число 1-е натуральное число: '))
+b = int(input('Введи число 2-е натуральное число: '))
+while a != b:
+    if a > b:
+        max = a
+        a = a-b
+    else:
+        max = b
+        b = b-a
+print('НОД -', a)
+# 8
+print()
+print('Задача 8')
