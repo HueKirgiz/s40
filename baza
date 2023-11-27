@@ -1,0 +1,28 @@
+s = str(input('Введите разные символы: '))
+s1 = s
+s += '~'
+b = s.find('c')
+s = s[b:]
+l = len(s)
+t1 = ''
+lmax1 = 0
+totalC = ''
+totalL = 0
+for i in range(l):
+    a = s[0]
+    if a == 'c':
+        t1 += a
+        lmax1 = len(t1)
+    if a != 'c':
+        if s1[0] == 'c':
+            if totalL <= lmax1:
+                totalL = totalL
+                totalC = totalC
+            else:
+                totalL = lmax1
+                totalC = t1
+            lmax1 = 0
+            t1 = ''
+        s1 = s
+        s = s[1:]
+print(f'Самая длинная цепочка символов C ({totalC}) состоит из {totalL} символов')
